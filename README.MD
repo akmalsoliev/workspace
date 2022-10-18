@@ -9,4 +9,8 @@
 
 This script setups the working/development workspace including Vim and tmux settings and plugins.
 
-Run the file with `sudo ./setup.sh` 
+Run the file:
+
+`sudo chmod a+x install.sh`
+
+`sudo ./setup.sh` 
