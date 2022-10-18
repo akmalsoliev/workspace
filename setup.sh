@@ -69,6 +69,6 @@ tmux source ~/.tmux.conf
 # LSD Install
 apt-get install jq -y
 latestVersion=$(curl -sL https://api.github.com/repos/Peltoche/lsd/releases/latest | jq -r ".tag_name")
-fileName=lsd-musl_${lv}_amd64.deb
+fileName=lsd-musl_${latestVersion}_amd64.deb
 wget https://github.com/Peltoche/lsd/releases/download/${latestVersion}/${fileName}
 dpkg -i $fileName
