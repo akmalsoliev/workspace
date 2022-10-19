@@ -15,6 +15,12 @@ Run the file:
 
 `./setup.sh` 
 
+NOTE: Don't forget to run!
+
+* Github authentication: `gh auth login`
+
+* Docker login: `sudo docker login`
+
 --------------------
 
 To log:
