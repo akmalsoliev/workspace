@@ -13,4 +13,10 @@ Run the file:
 
 `sudo chmod a+x install.sh`
 
-`sudo ./setup.sh` 
+`./setup.sh` 
+
+--------------------
+
+To log:
+
+`sh -x ./setup.sh >> logs.txt`
