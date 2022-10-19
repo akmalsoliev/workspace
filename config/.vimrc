@@ -1,5 +1,5 @@
 " Plugins will be downloaded under the specified directory.
-call plug#begin(has('nvim') ? stdpath('data') . '/plugged' : '~/.vim/plugged')
+call plug#begin()
 
 " Install vim-plug if not found
 if empty(glob('~/.vim/autoload/plug.vim'))
