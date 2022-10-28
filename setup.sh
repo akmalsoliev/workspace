@@ -45,6 +45,8 @@ cd vim/src
 ./make install 
 cd $USER_DIR
 rm -rf vim
+# Setting Vim as default editor for git
+git config --global core.editor "vim"
 
 ###################################################################################################
 # LSD Install
@@ -82,3 +84,14 @@ curl -fsSL https://cli.github.com/packages/githubcli-archive-keyring.gpg | sudo 
   && sudo apt install gh -y
 sudo apt-get update
 sudo apt install gh
+
+###################################################################################################
+# Bash Prompt 
+# Comment: Haven't yet fully tested this section, nor have time for it now, will be implemented
+#   in future. 
+# sudo apt-get update
+# sudo apt install fonts-powerline -y
+# git clone --recursive https://github.com/andresgongora/synth-shell.git
+# chmod +x synth-shell/setup.sh
+# cd synth-shell
+# ./setup.sh
