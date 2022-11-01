@@ -40,9 +40,8 @@ sudo apt-get update
 git clone https://github.com/vim/vim.git
 cd vim/src
 ./configure
-./make distclean
-./make
-./make install 
+make
+sudo make install 
 cd $USER_DIR
 rm -rf vim
 # Setting Vim as default editor for git
