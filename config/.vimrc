@@ -1,3 +1,10 @@
+" Set numbers:
+set number 
+set encoding=UTF-8
+" Enable Syntax
+syntax enable
+set autoindent expandtab tabstop=2 shiftwidth=2
+
 " Plugins will be downloaded under the specified directory.
 call plug#begin()
 
@@ -11,18 +18,14 @@ autocmd VimEnter * if len(filter(values(g:plugs), '!isdirectory(v:val.dir)'))
   \| PlugInstall --sync | source $MYVIMRC
   \| endif
 
-" Set numbers:
-set number 
-set encoding=UTF-8
-" Enable Syntax
-syntax enable
-set autoindent expandtab tabstop=2 shiftwidth=2
-
 Plug 'preservim/nerdtree'
 Plug 'Xuyuanp/nerdtree-git-plugin'
 Plug 'ryanoasis/vim-devicons'
+Plug 'arcticicestudio/nord-vim'
 
 map <silent> <F1> :NERDTreeToggle<CR>
 
 " List ends here. Plugins become visible to Vim after this call.
 call plug#end()
+
+colorscheme nord
