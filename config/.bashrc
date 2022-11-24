@@ -98,7 +98,8 @@ alias ll='ls -alF'
 alias l='ls -CF'
 
 # Docker aliases
-alias dl_env='docker compose up -d && docker compose exec dl_env bash'
+alias dl_jupyter='docker run --rm -d --network host -v "$(pwd)":/workdir asoliev/deep-learning:jupyter'
+alias dl_dev='docker run --rm -it -v "$(pwd)":/workdir asoliev/deep-learning:dev'
 
 # Add an "alert" alias for long running commands.  Use like so:
 #   sleep 10; alert
@@ -124,3 +125,9 @@ if ! shopt -oq posix; then
   fi
 fi
 
+
+##-----------------------------------------------------
+## synth-shell-prompt.sh
+if [ -f /home/asol/.config/synth-shell/synth-shell-prompt.sh ] && [ -n "$( echo $- | grep i )" ]; then
+	source /home/asol/.config/synth-shell/synth-shell-prompt.sh
+fi
