@@ -6,6 +6,7 @@
 * Vim
 * tmux
 * LSD (LSDeluxe)
+* Synth Shell
 
 This script setups the working/development workspace including Vim and tmux settings and plugins.
 
