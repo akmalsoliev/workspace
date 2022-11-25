@@ -96,3 +96,5 @@ chmod +x synth-shell/setup.sh
 cd synth-shell
 printf "%s" i u n y n n y | ./setup.sh
 mv ~/synth-shell-prompt.config ~/.config/synth-shell/synth-shell-prompt.config
+rm -rf ~/synth-shell/
+
