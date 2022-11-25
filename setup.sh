@@ -71,6 +71,7 @@ tmux source ~/.tmux.conf
 # Plugin Manager
 curl -fLo ~/.vim/autoload/plug.vim --create-dirs https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
 vim +'source ~/.vimrc' +'PlugInstall!' +'PlugUpdate!' +qa
+echo 'colorscheme nord' >> ~/.vimrc
 
 ###################################################################################################
 # Installing Github Authenticator
@@ -83,14 +84,15 @@ curl -fsSL https://cli.github.com/packages/githubcli-archive-keyring.gpg | sudo 
   && sudo apt install gh -y
 sudo apt-get update
 sudo apt install gh
+git config --global user.email "soliev@gmail.com"
+git config --global user.name "Akmal Soliev"
 
 ###################################################################################################
 # Bash Prompt 
-# Comment: Haven't yet fully tested this section, nor have time for it now, will be implemented
-#   in future. 
-# sudo apt-get update
-# sudo apt install fonts-powerline -y
-# git clone --recursive https://github.com/andresgongora/synth-shell.git
-# chmod +x synth-shell/setup.sh
-# cd synth-shell
-# ./setup.sh
+sudo apt-get update
+sudo apt install fonts-powerline -y
+git clone --recursive https://github.com/andresgongora/synth-shell.git
+chmod +x synth-shell/setup.sh
+cd synth-shell
+printf "%s" i u n y n n y | ./setup.sh
+mv ~/synth-shell-prompt.config ~/.config/synth-shell/synth-shell-prompt.config

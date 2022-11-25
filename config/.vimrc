@@ -30,5 +30,3 @@ set backspace=indent,eol,start
 syntax enable
 set autoindent expandtab tabstop=2 shiftwidth=2
 set mouse=a
-
-colorscheme nord
